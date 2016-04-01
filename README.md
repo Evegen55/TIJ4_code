@@ -1,4 +1,6 @@
-# TIJ4_code
+# TIJ4_code This repo has been created for more flexible using as eclipse project.
+
+
 This computer source code is Copyright (c)2006 MindView, Inc. All Rights Reserved.
 
 
