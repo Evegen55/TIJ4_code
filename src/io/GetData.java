@@ -1,3 +1,5 @@
+package io;
+
 //: io/GetData.java
 // Getting different representations from a ByteBuffer
 import java.nio.*;
