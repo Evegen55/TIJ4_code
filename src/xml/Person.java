@@ -1,3 +1,5 @@
+package xml;
+
 //: xml/Person.java
 // Use the XOM library to write and read XML
 // {Requires: nu.xom.Node; You must install

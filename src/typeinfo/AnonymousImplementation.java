@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/AnonymousImplementation.java
 // Anonymous inner classes can't hide from reflection.
 import typeinfo.interfacea.*;
@@ -13,7 +15,7 @@ class AnonymousA {
       private void w() { print("private C.w()"); }
     };
   }
-}	
+}
 
 public class AnonymousImplementation {
   public static void main(String[] args) throws Exception {
