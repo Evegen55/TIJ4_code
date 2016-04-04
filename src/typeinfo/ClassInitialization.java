@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/ClassInitialization.java
 import java.util.*;
 

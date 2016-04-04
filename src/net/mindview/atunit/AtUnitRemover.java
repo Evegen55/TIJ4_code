@@ -6,10 +6,6 @@
 // You must install the Javassist library from
 // http://sourceforge.net/projects/jboss/ }
 package net.mindview.atunit;
-import javassist.*;
-import javassist.expr.*;
-import javassist.bytecode.*;
-import javassist.bytecode.annotation.*;
 import java.io.*;
 import java.util.*;
 import net.mindview.util.*;

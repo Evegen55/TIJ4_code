@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/PetCount3.java
 // Using isInstance()
 import typeinfo.pets.*;
@@ -17,7 +19,7 @@ public class PetCount3 {
           : entrySet())
         if(pair.getKey().isInstance(pet))
           put(pair.getKey(), pair.getValue() + 1);
-    }	
+    }
     public String toString() {
       StringBuilder result = new StringBuilder("{");
       for(Map.Entry<Class<? extends Pet>,Integer> pair
@@ -31,7 +33,7 @@ public class PetCount3 {
       result.append("}");
       return result.toString();
     }
-  }	
+  }
   public static void main(String[] args) {
     PetCounter petCount = new PetCounter();
     for(Pet pet : Pets.createArray(20)) {

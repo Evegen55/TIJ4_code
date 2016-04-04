@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/NullRobot.java
 // Using a dynamic proxy to create a Null Object.
 import java.lang.reflect.*;
@@ -16,7 +18,7 @@ class NullRobotProxyHandler implements InvocationHandler {
     public List<Operation> operations() {
       return Collections.emptyList();
     }
-  }	
+  }
   public Object
   invoke(Object proxy, Method method, Object[] args)
   throws Throwable {
@@ -31,7 +33,7 @@ public class NullRobot {
       NullRobot.class.getClassLoader(),
       new Class[]{ Null.class, Robot.class },
       new NullRobotProxyHandler(type));
-  }	
+  }
   public static void main(String[] args) {
     Robot[] bots = {
       new SnowRemovalRobot("SnowBee"),

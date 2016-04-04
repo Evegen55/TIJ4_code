@@ -1,3 +1,5 @@
+package operators;
+
 //: operators/BitManipulation.java
 // Using the bitwise operators.
 import java.util.*;

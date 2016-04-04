@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/InnerImplementation.java
 // Private inner classes can't hide from reflection.
 import typeinfo.interfacea.*;
@@ -12,7 +14,7 @@ class InnerA {
     private void w() { print("private C.w()"); }
   }
   public static A makeA() { return new C(); }
-}	
+}
 
 public class InnerImplementation {
   public static void main(String[] args) throws Exception {

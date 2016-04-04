@@ -1,3 +1,5 @@
+package operators;
+
 //: operators/MathOps.java
 // Demonstrates the mathematical operators.
 import java.util.*;

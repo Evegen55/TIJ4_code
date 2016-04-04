@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/RegisteredFactories.java
 // Registering Class Factories in the base class.
 import typeinfo.factory.*;
@@ -8,7 +10,7 @@ class Part {
     return getClass().getSimpleName();
   }
   static List<Factory<? extends Part>> partFactories =
-    new ArrayList<Factory<? extends Part>>();	
+    new ArrayList<Factory<? extends Part>>();
   static {
     // Collections.addAll() gives an "unchecked generic
     // array creation ... for varargs parameter" warning.
@@ -25,7 +27,7 @@ class Part {
     int n = rand.nextInt(partFactories.size());
     return partFactories.get(n).create();
   }
-}	
+}
 
 class Filter extends Part {}
 
@@ -42,7 +44,7 @@ class AirFilter extends Filter {
   implements typeinfo.factory.Factory<AirFilter> {
     public AirFilter create() { return new AirFilter(); }
   }
-}	
+}
 
 class CabinAirFilter extends Filter {
   public static class Factory
@@ -58,7 +60,7 @@ class OilFilter extends Filter {
   implements typeinfo.factory.Factory<OilFilter> {
     public OilFilter create() { return new OilFilter(); }
   }
-}	
+}
 
 class Belt extends Part {}
 
@@ -76,7 +78,7 @@ class GeneratorBelt extends Belt {
       return new GeneratorBelt();
     }
   }
-}	
+}
 
 class PowerSteeringBelt extends Belt {
   public static class Factory
@@ -85,7 +87,7 @@ class PowerSteeringBelt extends Belt {
       return new PowerSteeringBelt();
     }
   }
-}	
+}
 
 public class RegisteredFactories {
   public static void main(String[] args) {

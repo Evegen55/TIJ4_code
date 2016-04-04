@@ -1,3 +1,5 @@
+package typeinfo;
+
 //: typeinfo/InterfaceViolation.java
 // Sneaking around an interface.
 import typeinfo.interfacea.*;

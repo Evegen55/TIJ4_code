@@ -1,3 +1,5 @@
+package operators;
+
 //: operators/EqualsMethod2.java
 // Default equals() does not compare contents.
 

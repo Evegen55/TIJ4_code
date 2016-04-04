@@ -1,10 +1,12 @@
+package operators;
+
 //: operators/Assignment.java
 // Assignment with objects is a bit tricky.
 import static net.mindview.util.Print.*;
 
 class Tank {
   int level;
-}	
+}
 
 public class Assignment {
   public static void main(String[] args) {
