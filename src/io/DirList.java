@@ -1,3 +1,5 @@
+package io;
+
 //: io/DirList.java
 // Display a directory listing using regular expressions.
 // {Args: "D.*\.java"}
@@ -9,10 +11,10 @@ public class DirList {
   public static void main(String[] args) {
     File path = new File(".");
     String[] list;
-    if(args.length == 0)
+    //if(args.length == 0)
       list = path.list();
-    else
-      list = path.list(new DirFilter(args[0]));
+   // else
+      list = path.list(new DirFilter(".*\\.md"));
     Arrays.sort(list, String.CASE_INSENSITIVE_ORDER);
     for(String dirItem : list)
       System.out.println(dirItem);
